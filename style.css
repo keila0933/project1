@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-------------------- css reset --------------------*/
+
+
+
+/*-------------------- All  --------------------*/
+html{
+  font-family:Microsoft JhengHei;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  }
+
+.mgb{
+    margin-bottom: 72px;
+}
+
+.container-flex{
+	display: flex;
+}
+
+.font-size{
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.title_box{
+  padding-bottom: 8px;
+  border-bottom: 1px solid;
+  align-items: center;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.title_box h2{
+  font-size: 32px;
+  line-height: 45px;
+}
+
+.title_box span{
+  font-size: 24px;
+  line-height: 32px;
+  color: #A00404;
+  padding-left: 16px;
+}
+
+/*-------------------- header  --------------------*/  
+.header h1{
+  font-size: 80px;
+  line-height: 90px;
+  padding: 48px 0 24px 0;
+  border-bottom: 2px solid;
+}
+
+.header img{
+  padding:48px 0;
+}
+
+/*-------------------- profile  --------------------*/
+
+.profile ul{
+  margin-bottom: 24px;
+  padding-left: 48px;
+}
+
+.profile li{
+  position: relative;
+}
+
+.point:before{
+	content:"";
+	position:absolute;
+	width: 16px;
+	height: 16px;
+	background: #96A9C4;
+	border-radius: 50%;
+	top: 10px;
+	left: -32px;
+}
+/*-------------------- education  --------------------*/
+
+.edu ul{
+	padding-left: 48px;
+}
+
+.edu li{
+	margin-bottom: 32px;
+	position: relative;
+}
+
+.line:after{
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 66px;
+	background: #96A9C4;
+	top: 18px;
+	left: -24px;
+}
+/*-------------------- skills  --------------------*/
+
+.skills-bg{
+	position: relative;
+}
+
+.skills-bg:after{
+	content: "";
+	position: absolute;
+	background: #96A9C4;
+	height: 360px;
+	width: 100%;
+	z-index: -1;
+	top: 85px;
+}
+
+.skills{
+	background: #415165;
+	color: #fff;
+	padding-top: 24px;
+	padding-bottom: 56px;
+}
+
+.skillsList{
+	max-width: 996px;
+	margin: 0 auto;
+	flex-direction: column;
+	align-items: center;
+}
+
+.skillsList .title_box{
+	width: 100%;
+	justify-content: center;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 40px;
+}
+
+.skillsList span{
+	color: #fff;
+}
+
+.skillsItem{
+	position: relative;
+}
+
+.skillsItem li{
+	margin-bottom: 16px;
+}
+
+.skillsItem:before{
+	content: "";
+	position: absolute;
+	border-left: 1px solid #96A9C4;
+	top: 0;
+	bottom: 0;
+	left: -23px;
+}
+
+.skillsItem li:last-child{
+	margin-bottom: 0;
+}
+
+/*-------------------- exp  --------------------*/
+
+.experience .title{
+	margin-bottom: -10px;
+}
+
+.experienceItem{
+	position: relative;
+	padding-left: 48px;
+}
+
+.experienceItem h3{
+	margin-top: 32px;
+}
+
+.experienceItem img{
+	display: block;
+	padding: 8px 0; 
+}
+
+.experienceItem p{
+	font-size: 20px;
+	line-height: 30px;
+	max-width: 642px;
+}
+
+.experienceItem:before{
+	content: "";
+	position: absolute;
+	border-left: 1px solid #96A9C4;
+	top: 0;
+	bottom: 0;
+	left: 24px;
+}
+
+/*-------------------- footer  --------------------*/
+
+.footer{
+	background: #415165;
+	color: #fff;
+	padding-top: 24px;
+	padding-bottom: 48px;
+}
+
+.contact .title_box{
+	width: 100%;
+	justify-content: center;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 32px;
+}
+
+.contact span{
+	color: #fff;
+}
+
+.contactList li{
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.footerIcon{
+	justify-content: center;
+}
+
+.footerIcon li{
+	margin-right: 24px;
+}
+
